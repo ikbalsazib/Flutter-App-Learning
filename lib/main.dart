@@ -1,10 +1,9 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
-import 'package:my_flutter_learning/home-page.dart';
+import 'package:my_flutter_learning/pages/home-page.dart';
+import 'package:my_flutter_learning/pages/login-page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 
@@ -13,8 +12,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage()
+    return MaterialApp(
+      // home: const HomePage(),
+      themeMode: ThemeMode.system,
+      theme: ThemeData(primarySwatch: Colors.purple),
+      darkTheme: ThemeData(primarySwatch: Colors.deepOrange),
+      initialRoute: "/home",
+      routes: {
+        "/": (context) => const LoginPage(),
+        "/home": (context) => const HomePage(),
+        "/login": (context) => const LoginPage(),
+      },
     );
   }
 }
