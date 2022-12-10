@@ -7,16 +7,30 @@ class Product {
   final String? image;
 
   Product({this.id, this.name, this.desc, this.price, this.color, this.image});
+
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'name': name,
+      'desc': desc,
+      'price': price,
+      'color': color,
+      'image': image,
+    };
+  }
+
+  factory Product.fromMap(Map<String, dynamic> map) {
+    return Product(
+      id: map['id'] as String,
+      name: map['name'] as String,
+      desc: map['desc'] as String,
+      price: map['price'] as num,
+      color: map['color'] as String,
+      image: map['image'] as String,
+    );
+  }
 }
 
 class ProductData {
-  static final products = [
-    Product(
-        id: '1',
-        name: 'iPhone 14 pro max',
-        desc: 'This iPhone 14 pro max is latest in 2022',
-        price: 1499,
-        color: 'red',
-        image: 'https://www.telstra.com.au/content/dam/tcom/devices/mobile/mhdwhst-14pm/deeppurple/landscape-front.png'),
-  ];
+  static List<Product> products = [];
 }

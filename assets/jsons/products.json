@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "iPhone 14 pro max",
+      "desc": "This iPhone 14 pro max is latest in 2022",
+      "price": 1499,
+      "color": "Red",
+      "image": "https://www.telstra.com.au/content/dam/tcom/devices/mobile/mhdwhst-14pm/deeppurple/landscape-front.png"
+    },
+    {
+      "id": "1",
+      "name": "iPhone 14 pro",
+      "desc": "This iPhone 14 pro is great in 2022",
+      "price": 1299,
+      "color": "Red",
+      "image": "https://www.telstra.com.au/content/dam/tcom/devices/mobile/mhdwhst-14pm/deeppurple/landscape-front.png"
+    }
+  ]
+}
