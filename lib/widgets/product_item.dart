@@ -14,7 +14,10 @@ class ProductItem extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 2.0),
         child: ListTile(
-          leading: Image.network(product.image ?? defaultImg),
+          leading: Hero(
+            tag: Key(product.id!),
+              child: Image.network(product.image ?? defaultImg)
+          ),
           title: Text(product.name ?? 'N/A'),
           subtitle: Text(product.desc ?? 'N/A'),
           trailing: Text(

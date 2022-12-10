@@ -9,12 +9,44 @@
       "image": "https://www.telstra.com.au/content/dam/tcom/devices/mobile/mhdwhst-14pm/deeppurple/landscape-front.png"
     },
     {
-      "id": "1",
+      "id": "2",
       "name": "iPhone 14 pro",
       "desc": "This iPhone 14 pro is great in 2022",
       "price": 1299,
       "color": "Red",
-      "image": "https://www.telstra.com.au/content/dam/tcom/devices/mobile/mhdwhst-14pm/deeppurple/landscape-front.png"
+      "image": "https://www.notebookcheck.net/fileadmin/Notebooks/Apple/iPhone_14_Plus/4_zu_3_Teaser_News2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "iPhone 13",
+      "desc": "This iPhone 13 is great in 2022",
+      "price": 1159,
+      "color": "Red",
+      "image": "https://mobilemall.pk/public_html/images/product/product_1631796207iphone-13-starlight-select-2021.png"
+    },
+    {
+      "id": "5",
+      "name": "iPhone 13 Pro",
+      "desc": "This iPhone 13 pro is great in 2022",
+      "price": 1259,
+      "color": "Red",
+      "image": "https://www.mobiledokan.com/wp-content/uploads/2021/10/Apple-iPhone-13-Pro-Max-image.jpg"
+    },
+    {
+      "id": "6",
+      "name": "iPhone Xs Max",
+      "desc": "This iPhone Xs Max is great in 2022",
+      "price": 1259,
+      "color": "Red",
+      "image": "https://swapcash.mu/wp-content/uploads/2021/07/iPhone-XS-Max-Gold-2.jpg"
+    },
+    {
+      "id": "7",
+      "name": "iPhone 12 pro",
+      "desc": "This iPhone 12 pro is great in 2022",
+      "price": 1259,
+      "color": "Red",
+      "image": "https://www.mobiledokan.com/wp-content/uploads/2020/10/Apple-iphone-12-Pro-Max.jpg"
     }
   ]
 }

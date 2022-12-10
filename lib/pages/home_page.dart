@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:my_flutter_learning/models/product.dart';
+import 'package:my_flutter_learning/pages/product_details_page.dart';
 import 'package:my_flutter_learning/widgets/product_item.dart';
 
 import '../widgets/drawer.dart';
@@ -33,7 +34,13 @@ class _HomePageState extends State<HomePage> {
             ? ListView.builder(
                 itemCount: ProductData.products.length,
                 itemBuilder: (context, index) {
-                  return ProductItem(product: ProductData.products[index]);
+                  return InkWell(
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ProductDetails(
+                                  product: ProductData.products[index]))),
+                      child: ProductItem(product: ProductData.products[index]));
                 },
               )
             : const Center(
